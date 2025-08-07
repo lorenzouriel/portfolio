@@ -9,7 +9,10 @@
         <div class="hero-content">
 
           {% if site.title != '' %}
-          <h1 class="text-center">{{site.title}}</h1>
+            <img src="https://github.com/{{ site.github_username }}.png"
+                alt="{{ site.github_username }} GitHub avatar"
+                style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 1rem;">
+            <h1 class="text-center">{{ site.title }}</h1>
           {% endif %}
 
           {% if site.description != '' or site.enable_contact == true %}
@@ -27,8 +30,8 @@
 
           <div class="hero-buttons">
 
-            {% if site.twitter_username != '' %}
-              <a href="https://twitter.com/{{ site.twitter_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-twitter fa-lg"></i>Twitter</button></a>
+            {% if site.linkedin_username != '' %}
+              <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-lg"></i>LinkedIn</button></a>
             {% endif %}
             {% if site.github_username != '' %}
               <a href="https://github.com/{{ site.github_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Github</button></a>
