@@ -17,7 +17,7 @@ title: "Hello. I'm Lorenzo Uriel."
 email: 'lorenzouriel394@gmail.com'
 description: "Passionate about Data, Technology and Project Management. With a degree in Information Systems, a postgraduate degree in Project Management, and over 4 years of experience in the Data industry."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://lorenzouriel.com/portfolio" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://lorenzouriel.com" # the base hostname & protocol for your site, e.g. https://example.com
 twitter_username: 'lorenzo-uriel'
 github_username: 'lorenzouriel'
 medium_username: 'medium.com/@lorenzouriel'
