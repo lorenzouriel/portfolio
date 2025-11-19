@@ -21,6 +21,8 @@ url: "https://lorenzouriel.com" # the base hostname & protocol for your site, e.
 twitter_username: 'lorenzo-uriel'
 github_username: 'lorenzouriel'
 medium_username: 'medium.com/@lorenzouriel'
+linkedin_username: 'lorenzouriel'
+calendly_username: 'lorenzouriel394/30min'
 
 # Build settings
 markdown: kramdown
