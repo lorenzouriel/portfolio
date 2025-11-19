@@ -4,12 +4,12 @@ position: right
 title: 'MSSQL MCP Python Server'
 date: 2025-11-17 12:00:00
 categories: development ai
-tags: Python SQL-Server MCP AI LLM Security Docker API
-featured_image: '/img/posts/06_mssql-mcp-1130x864-2x.png'
+tags: Python SQL-Server MCP AI LLM
+featured_image: '/img/posts/mssql-python-logo.png'
 project_link: 'https://github.com/lorenzouriel/mssql-mcp-python'
 button_icon: 'github'
 button_text: 'Visit Project'
-lead_text: 'A secure Model Context Protocol (MCP) server that safely exposes SQL Server database capabilities to LLM clients with built-in security measures.'
+lead_text: 'is a production-ready implementation of the Model Context Protocol (MCP) that provides controlled and secure SQL Server database access for Large Language Model (LLM) applications. '
 ---
 
 ## MSSQL MCP Python Server
