@@ -9,7 +9,7 @@ featured_image: '/img/posts/mssql-python-logo.png'
 project_link: 'https://github.com/lorenzouriel/mssql-mcp-python'
 button_icon: 'github'
 button_text: 'Visit Project'
-lead_text: 'is a production-ready implementation of the Model Context Protocol (MCP) that provides controlled and secure SQL Server database access for Large Language Model (LLM) applications. '
+lead_text: 'Implementation of the Model Context Protocol (MCP) that provides controlled and secure SQL Server database access for Large Language Model (LLM) applications.'
 ---
 
 ## MSSQL MCP Python Server
