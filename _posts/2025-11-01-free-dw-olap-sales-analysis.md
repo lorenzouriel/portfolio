@@ -1,7 +1,7 @@
 ---
 layout: inner
 position: right
-title: 'Free Data Warehouse & OLAP for Sales Analysis'
+title: 'Low Cost DW & OLAP Solution'
 date: 2025-11-01 12:00:00
 categories: development data-warehouse
 tags: SQL-Server SSIS SSAS PowerBI ETL
