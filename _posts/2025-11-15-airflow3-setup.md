@@ -2,7 +2,7 @@
 layout: inner
 position: left
 title: 'Apache Airflow 3.0 - Setup Collection'
-date: 2025-11-05 12:00:00
+date: 2025-11-15 12:00:00
 categories: development data-engineering
 tags: Apache-Airflow Docker Python ETL Data-Engineering Orchestration
 featured_image: '/img/posts/airflow3-setup.png'
