@@ -4,7 +4,7 @@ position: right
 title: 'Free Data Warehouse & OLAP for Sales Analysis'
 date: 2025-11-01 12:00:00
 categories: development data-warehouse
-tags: SQL-Server SSIS SSAS PowerBI ETL OLAP
+tags: SQL-Server SSIS SSAS PowerBI ETL
 featured_image: '/img/posts/free-dw-olap-architecture.png'
 project_link: 'https://github.com/lorenzouriel/create-free-dw-and-olap-for-sales-analysis'
 button_icon: 'github'

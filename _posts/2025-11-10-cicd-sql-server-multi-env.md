@@ -1,7 +1,7 @@
 ---
 layout: inner
 position: left
-title: "CI/CD for SQL Server Database Projects (Dev, QA and Prod)"
+title: "CI/CD for SQL Databases (Dev, QA and Prod)"
 date: 2025-11-10 12:00:00
 categories: devops cicd sql-server
 tags: Azure-DevOps SQL-Server Pipelines CICD
