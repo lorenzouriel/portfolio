@@ -1,7 +1,15 @@
 <div class="content">
-  <h3 class="title">{{ post.title }}</h3>
+  {% if current_lang == 'pt' and post.title_pt %}
+    <h3 class="title">{{ post.title_pt }}</h3>
+  {% else %}
+    <h3 class="title">{{ post.title }}</h3>
+  {% endif %}
 
-  <p class="excerpt">{{ post.lead_text }}</p>
+  {% if current_lang == 'pt' and post.lead_text_pt %}
+    <p class="excerpt">{{ post.lead_text_pt }}</p>
+  {% else %}
+    <p class="excerpt">{{ post.lead_text }}</p>
+  {% endif %}
 
   {% if post.project_link != empty %}
   <a href="{{ post.project_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{ t.visit_project }}</button></a>

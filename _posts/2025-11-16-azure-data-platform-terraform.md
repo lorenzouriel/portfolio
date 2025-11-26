@@ -2,6 +2,7 @@
 layout: inner
 position: left
 title: "Azure Data Platform with Terraform"
+title_pt: "Plataforma de Dados Azure com Terraform"
 date: 2025-11-16 12:00:00
 categories: cloud infrastructure data-platform
 tags: Terraform Azure IaC Data-Platform Databricks Synapse Event-Hub Data-Factory
@@ -10,6 +11,7 @@ project_link: 'https://github.com/lorenzouriel/terraform-azure-data-platform'
 button_icon: 'github'
 button_text: 'Visit Project'
 lead_text: "Complete Infrastructure-as-Code setup for deploying a comprehensive Azure data platform with Terraform, including Data Lake, Databricks, Synapse Analytics, and Event Hub."
+lead_text_pt: "Configuração completa de Infraestrutura como Código para implantar uma plataforma de dados Azure abrangente com Terraform, incluindo Data Lake, Databricks, Synapse Analytics e Event Hub."
 ---
 
 This project provides a complete Infrastructure-as-Code (IaC) setup for deploying a comprehensive Azure data platform using Terraform. It includes multiple data services and follows best practices for modularity, maintainability, and environment management.
