@@ -1,7 +1,7 @@
 ---
 layout: inner
 position: left
-title: "Automated SQL Server Infra with Proxmox, Ansible and CI/CD"
+title: "SQL Infra with Proxmox, Ansible and CI/CD"
 date: 2025-11-20 12:00:00
 categories: devops infrastructure automation
 tags: Proxmox Ansible Azure-DevOps SQL-Server Docker IaC Flyway
