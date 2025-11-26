@@ -11,7 +11,7 @@
           {% if site.title != '' %}
             <img src="https://github.com/{{ site.github_username }}.png"
                 alt="{{ site.github_username }} GitHub avatar"
-                style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 1rem;">
+                class="hero-avatar">
             <h1 class="text-center">{{ site.title }}</h1>
           {% endif %}
 
@@ -29,7 +29,7 @@
           {% endif %}
 
           {% if site.calendly_username != '' %}
-          <p class="text-center" style="margin-top: 1rem;">
+          <p class="text-center calendly-link">
             If you or your company needs help with the solutions below, <a href="https://calendly.com/{{ site.calendly_username }}" target="_blank" style="text-decoration: underline;">get in contact here</a>.
           </p>
           {% endif %}

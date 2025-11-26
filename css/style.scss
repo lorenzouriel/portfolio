@@ -43,6 +43,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+h2 {
+  @include bp-xsmall {
+    font-size: 1.8em;
+  }
+  @include bp-small {
+    font-size: 2em;
+  }
+}
+
 article {
   margin: 5em 0;
 }
@@ -50,6 +59,12 @@ article {
 p {
   line-height: 1.8;
   font-size: 1.3em;
+  @include bp-xsmall {
+    font-size: 1.1em;
+  }
+  @include bp-small {
+    font-size: 1.2em;
+  }
 }
 
 a {
@@ -81,9 +96,18 @@ button.btn, input.btn {
   i {
     padding-right: 0.5em;
   }
+  @include bp-small {
+    padding: 10px 25px;
+    margin: 1em 0.3em;
+    font-size: 14px;
+  }
   @include bp-xsmall {
     @include horizontal-align;
-    margin-bottom: 0.5em;
+    margin: 0.5em auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 90%;
+    max-width: 300px;
   }
 }
 
@@ -93,6 +117,10 @@ button.btn, input.btn {
   border-right: solid 1px #cedfea;
   &.container {
     padding: 0;
+  }
+  @include bp-xsmall {
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -111,6 +139,23 @@ button.btn, input.btn {
 /*--------------------------------------------------------------
 	2.0 Home Hero
 --------------------------------------------------------------*/
+.hero-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem;
+  @include bp-xsmall {
+    width: 100px;
+    height: 100px;
+  }
+  @include bp-small {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 .hero-container {
   margin: 10em 0 9em 0;
   @include bp-xsmall {
@@ -127,22 +172,45 @@ button.btn, input.btn {
   display: table;
   @include bp-medium {
     width: 100%;
+    padding: 0 2em;
   }
   @include bp-small {
     width: 100%;
+    padding: 0 1.5em;
   }
   @include bp-xsmall {
     width: 100%;
+    padding: 0 1em;
   }
   h1 {
     font-size: 48px;
+    @include bp-small {
+      font-size: 36px;
+    }
+    @include bp-xsmall {
+      font-size: 28px;
+    }
   }
   p {
     margin: 2em 0 4em 0;
+    @include bp-xsmall {
+      margin: 1.5em 0 2em 0;
+    }
+  }
+  .calendly-link {
+    margin-top: 1rem;
+    @include bp-xsmall {
+      font-size: 1em;
+      padding: 0 0.5em;
+    }
   }
   .hero-buttons {
     margin: 0 auto;
     display: table;
+    @include bp-xsmall {
+      display: block;
+      width: 100%;
+    }
     i {
       padding-right: 0.5em;
     }
@@ -239,11 +307,16 @@ button.btn, input.btn {
 .section-subtitle {
   width: 40%;
   margin: 0 auto;
-  @include bp-xsmall {
-    width: 100%;
+  @include bp-medium {
+    width: 60%;
   }
   @include bp-small {
-    width: 60%;;
+    width: 80%;
+    padding: 0 1em;
+  }
+  @include bp-xsmall {
+    width: 100%;
+    padding: 0 1em;
   }
 }
 
@@ -266,12 +339,25 @@ button.btn, input.btn {
   .content {
     margin-top: 5em;
     margin-left: 5em;
+    @include bp-medium {
+      margin-left: 3em;
+      margin-top: 3em;
+    }
+    @include bp-small {
+      margin-left: 1.5em;
+      margin-top: 2em;
+    }
     @include bp-xsmall {
       margin-left: 0;
+      margin-top: 1em;
+      padding: 0 1em;
     }
     h3.title {
       position: relative;
       margin-bottom: 1.5em;
+      @include bp-xsmall {
+        font-size: 1.5em;
+      }
       &:after {
         content: '';
         position: absolute;
@@ -284,6 +370,12 @@ button.btn, input.btn {
     }
     .excerpt {
       width: 80%;
+      @include bp-medium {
+        width: 90%;
+      }
+      @include bp-small {
+        width: 100%;
+      }
       @include bp-xsmall {
         width: 100%;
       }
@@ -293,6 +385,9 @@ button.btn, input.btn {
       margin-left: 0;
       margin-bottom: 1em;
       margin-top: 1em;
+      @include bp-xsmall {
+        font-size: 14px;
+      }
     }
     .tags, .categories {
       margin: 2em 0;
@@ -302,6 +397,10 @@ button.btn, input.btn {
         padding: 0.5em 1.5em;
         display: inline-block;
         margin-bottom: 0.5em;
+        @include bp-xsmall {
+          padding: 0.4em 1em;
+          font-size: 0.9em;
+        }
       }
     }
     .categories span {
@@ -315,6 +414,12 @@ button.btn, input.btn {
 .post-row {
     align-items: center;
     display: flex;
+    @include bp-xsmall {
+      display: block;
+    }
+    @include bp-small {
+      display: block;
+    }
 }
 
 /*--------------------------------------------------------------
