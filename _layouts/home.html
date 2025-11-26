@@ -1,3 +1,6 @@
+{% assign current_lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[current_lang] %}
+
 {% include header.html %}
 
     {% include home-hero.html %}
@@ -6,9 +9,6 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-
-            {% assign current_lang = page.lang | default: site.default_lang %}
-            {% assign t = site.data.translations[current_lang] %}
 
             <h2 class="section-title text-center">{{ t.latest_work }}</h2>
             {% if site.section_subtitle != '' %}
