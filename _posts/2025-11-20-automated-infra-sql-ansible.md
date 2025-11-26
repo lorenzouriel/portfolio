@@ -31,8 +31,7 @@ Here's what we set up:
 - SQL Server in Docker fully managed and configured
 
 ## Repository Structure
-
-```
+```bash
 .
 ├── Makefile
 ├── provision/
