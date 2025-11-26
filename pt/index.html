@@ -1,6 +1,42 @@
 ---
-layout: home
 lang: pt
-pagination:
-  enabled: true
 ---
+
+{% assign current_lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[current_lang] %}
+
+{% include header.html %}
+
+    {% include home-hero.html %}
+
+    <main id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <h2 class="section-title text-center">{{ t.latest_work }}</h2>
+            {% if site.section_subtitle != '' %}
+            <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
+            {% endif %}
+
+            <div class="break"></div>
+
+            {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+            {% for post in sorted_posts %}
+              <div class="wow fadeIn">
+              {% if post.position == "left" %}
+                {% include content-left.html %}
+              {% endif %}
+
+              {% if post.position == "right" %}
+                {% include content-right.html %}
+              {% endif %}
+              </div>
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+{% include footer.html %}
