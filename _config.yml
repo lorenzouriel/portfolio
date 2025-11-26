@@ -24,6 +24,10 @@ medium_username: 'medium.com/@lorenzouriel'
 linkedin_username: 'lorenzo-uriel'
 calendly_username: 'lorenzouriel394/30min'
 
+# Language settings
+default_lang: en
+languages: ["en", "pt"]
+
 # Build settings
 markdown: kramdown
 # theme: phantom # Uncomment once published to RubyGems

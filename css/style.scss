@@ -26,6 +26,40 @@ $secondary: #FF7B7B;
 	1.0 Defaults
 --------------------------------------------------------------*/
 
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  @include bp-xsmall {
+    top: 10px;
+    right: 10px;
+    padding: 0.4em 0.8em;
+  }
+  .lang-link {
+    font-weight: 600;
+    font-size: 14px;
+    color: #2E4453;
+    text-decoration: none;
+    @include transition(color .2s ease-in-out);
+    &:hover {
+      color: #FF5B33;
+    }
+    &.active {
+      color: #FF5B33;
+      font-weight: 700;
+    }
+  }
+  .lang-separator {
+    margin: 0 0.5em;
+    color: #d5e0e7;
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1200px;

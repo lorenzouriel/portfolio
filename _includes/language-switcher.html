@@ -1,0 +1,17 @@
+<div class="language-switcher">
+  {% assign current_lang = page.lang | default: site.default_lang %}
+
+  <a href="/"
+     class="lang-link {% if current_lang == 'en' %}active{% endif %}"
+     data-lang="en"
+     title="English">
+    EN
+  </a>
+  <span class="lang-separator">|</span>
+  <a href="/pt"
+     class="lang-link {% if current_lang == 'pt' %}active{% endif %}"
+     data-lang="pt"
+     title="Português">
+    PT
+  </a>
+</div>
