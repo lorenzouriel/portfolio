@@ -1,3 +1,6 @@
+{% assign current_lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[current_lang] %}
+
 <div class="container">
 
   <div class="row">
@@ -8,29 +11,23 @@
 
         <div class="hero-content">
 
-          {% if site.title != '' %}
-            <img src="https://github.com/{{ site.github_username }}.png"
-                alt="{{ site.github_username }} GitHub avatar"
-                class="hero-avatar">
-            <h1 class="text-center">{{ site.title }}</h1>
-          {% endif %}
+          <img src="https://github.com/{{ site.github_username }}.png"
+              alt="{{ site.github_username }} GitHub avatar"
+              class="hero-avatar">
+          <h1 class="text-center">{{ t.site_title }}</h1>
 
-          {% if site.description != '' or site.enable_contact == true %}
           <p class="text-center">
-            {% if site.description != '' %}
-            {{site.description}}
-            {% endif %}
+            {{ t.site_description }}
 
             {% if site.enable_contact == true %}
             {% include contact.html %}
             {% include contact-modal.html %}
             {% endif %}
           </p>
-          {% endif %}
 
           {% if site.calendly_username != '' %}
           <p class="text-center calendly-link">
-            If you or your company needs help with the solutions below, <a href="https://calendly.com/{{ site.calendly_username }}" target="_blank" style="text-decoration: underline;">get in contact here</a>.
+            {{ t.calendly_text }} <a href="https://calendly.com/{{ site.calendly_username }}" target="_blank" style="text-decoration: underline;">{{ t.calendly_link_text }}</a>.
           </p>
           {% endif %}
 

@@ -7,9 +7,10 @@
         <div class="row">
           <div class="col-md-12">
 
-            {% if site.section_title != '' %}
-            <h2 class="section-title text-center">{{ site.section_title }}</h2>
-            {% endif %}
+            {% assign current_lang = page.lang | default: site.default_lang %}
+            {% assign t = site.data.translations[current_lang] %}
+
+            <h2 class="section-title text-center">{{ t.latest_work }}</h2>
             {% if site.section_subtitle != '' %}
             <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
             {% endif %}
