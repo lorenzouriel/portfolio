@@ -1,8 +1,8 @@
 ---
 layout: inner
 position: right
-title: 'Low Cost DW & OLAP Solution'
-title_pt: 'Solução DW & OLAP de Baixo Custo'
+title: 'Data Warehouse & OLAP Solution'
+title_pt: 'Solução Data Warehouse & OLAP'
 date: 2025-11-01 12:00:00
 categories: development data-warehouse
 tags: SQL-Server SSIS SSAS PowerBI ETL
