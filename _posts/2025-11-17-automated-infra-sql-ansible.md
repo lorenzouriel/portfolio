@@ -3,7 +3,7 @@ layout: inner
 position: left
 title: "Automated SQL Infrastructure"
 title_pt: 'Infraestrutura SQL Automatizada'
-date: 2025-11-20 12:00:00
+date: 2025-11-17 12:00:00
 categories: devops infrastructure automation
 tags: Proxmox Ansible Azure-DevOps SQL-Server Docker IaC Flyway
 featured_image: '/img/posts/automated-infra-sql-ansible.png'
