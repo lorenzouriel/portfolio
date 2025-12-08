@@ -3,7 +3,7 @@ layout: inner
 position: right
 title: 'AI Agent Forensic Doctor'
 title_pt: 'AI Agente Médico Forense'
-date: 2025-11-25 12:00:00
+date: 2025-12-01 12:00:00
 categories: development ai
 tags: RAG Qdrant LangChain LangGraph Langfuse
 featured_image: '/img/posts/agent-forensic-doctor.png'

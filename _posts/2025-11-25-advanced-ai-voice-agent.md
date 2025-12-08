@@ -2,7 +2,7 @@
 layout: inner
 position: right
 title: 'AI Voice Agent with Retell AI and Twillio'
-title_pt: 'Agente de Voz Desenvolvido com Retell AI e Twilio'
+title_pt: 'Agente de Voz com Retell AI e Twilio'
 date: 2025-11-25 12:00:00
 categories: development ai
 tags: RetellAI Twillio Voice-Agent
