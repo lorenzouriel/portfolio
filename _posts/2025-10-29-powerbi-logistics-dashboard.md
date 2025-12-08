@@ -3,7 +3,7 @@ layout: inner
 position: right
 title: 'Power BI Logistics (+toolkit)'
 title_pt: 'Power BI Logística (+toolkit)'
-date: 2025-10-30 12:00:00
+date: 2025-10-29 12:00:00
 categories: data-analysis etl
 tags: PowerBI PowerBICloud ETL DAX
 featured_image: '/img/posts/powerbi-logistics.png'
