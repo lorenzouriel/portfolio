@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: inner
 position: left
 title: "CI/CD for SQL (Dev, QA and Prod)"
@@ -12,4 +12,4 @@ button_icon: 'medium'
 button_text: 'Visit Project'
 lead_text: "Complete CI/CD pipeline for SQL Server database projects across multiple environments using Azure DevOps Pipelines."
 lead_text_pt: "Pipeline completa de CI/CD para projetos de banco de dados SQL Server em múltiplos ambientes usando Azure DevOps Pipelines."
----
+--- -->

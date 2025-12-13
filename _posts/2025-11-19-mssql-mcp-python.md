@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: inner
 position: right
 title: 'MSSQL MCP Python Server'
@@ -13,4 +13,4 @@ button_text: 'Visit Project'
 lead_text_pt: 'Implementação do Model Context Protocol (MCP) que fornece acesso controlado e seguro ao banco de dados SQL Server para aplicações de Large Language Model (LLM).'
 lead_text: 'Implementation of the Model Context Protocol (MCP) that provides controlled and secure SQL Server database access for Large Language Model (LLM) applications.'
 ---
-
+ -->

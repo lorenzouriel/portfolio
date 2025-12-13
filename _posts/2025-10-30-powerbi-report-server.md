@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: inner
 position: right
 title: 'Power BI Report Server Solution'
@@ -12,4 +12,4 @@ button_icon: 'github'
 button_text: 'Visit Project'
 lead_text: 'An integrated data analytics environment, using only free or pre-existing tools such as reports and dashboards in Power BI Report Server, enabling faster and more secure analysis without additional costs for the company.'
 lead_text_pt: 'Ambiente integrado de análise de dados, usando apenas ferramentas gratuitas ou já existentes como relatórios e dashboards no Power BI Report Server, permitindo análises mais rápidas, seguras e sem custo adicional para a empresa.'
----
+--- -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: inner
 position: right
 title: 'AI Agent Forensic Doctor'
@@ -12,4 +12,4 @@ button_icon: 'github'
 button_text: 'Visit Project'
 lead_text_pt: 'Um sistema AI com RAG e Self-Query Retrieval, projetado especificamente para análise de casos forenses e recuperação de documentação. Construído com LangGraph, LangChain, Langfuse, Qdrant e OpenAI.' 
 lead_text: 'An AI-powered Retrieval-Augmented Generation (RAG) and Self-Query Retrieval system specifically designed for forensic case analysis and documentation retrieval. Built with LangGraph, LangChain, Langfuse, Qdrant, and OpenAI.'
----
+--- -->

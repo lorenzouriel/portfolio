@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: inner
 position: right
 title: 'Power BI Logistics (+toolkit)'
@@ -12,4 +12,4 @@ button_icon: 'github'
 button_text: 'Visit Project'
 lead_text: 'Dashboard to analyze key metrics related to the logistics of the company, providing a strategic insight for the organization. To create the dashboards, a custom toolkit was added.'
 lead_text_pt: 'Dashboard para analisar as principais métricas relacionadas à logística da empresa, proporcionando um insight estratégico para a organização. Para a criação dos painéis foi adicionado um toolkit customizado.'
----
+--- -->

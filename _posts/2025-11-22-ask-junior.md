@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: inner
 position: right
 title: 'Ask Junior'
@@ -12,4 +12,4 @@ button_icon: 'github'
 button_text: 'Visit Project'
 lead_text_pt: 'Sistema RAG (Retrieval-Augmented Generation) que fornece uma interface de IA conversacional inteligente com observabilidade completa, ingestão automatizada de base de conhecimento e infraestrutura de nível empresarial.'
 lead_text: 'A RAG (Retrieval-Augmented Generation) system that provides an intelligent conversational AI interface with full observability, automated knowledge base ingestion, and enterprise-grade infrastructure.'
----
+--- -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: inner
 position: left
 title: 'Observability Stack'
@@ -12,4 +12,4 @@ button_icon: 'github'
 button_text: 'Visit Project'
 lead_text: 'Complete observability stack implementing the three pillars (metrics, logs, traces) using OpenTelemetry, Prometheus, Loki, Tempo, and Grafana.'
 lead_text_pt: 'Stack completa de observabilidade implementando os três pilares (métricas, logs, traces) usando OpenTelemetry, Prometheus, Loki, Tempo e Grafana.'
----
+--- -->
