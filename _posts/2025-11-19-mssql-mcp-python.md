@@ -1,3 +1,4 @@
+---
 layout: inner
 position: right
 title: 'MSSQL MCP Server'
@@ -11,3 +12,4 @@ button_icon: 'github'
 button_text: 'Visit Project'
 lead_text_pt: 'MCP que fornece acesso controlado e seguro ao seu banco de dados SQL Server para aplicações LLM.'
 lead_text: 'MCP that provides controlled and secure SQL Server database access for LLM applications.'
+---
