@@ -5,7 +5,7 @@ title: 'MSSQL MCP Server'
 title_pt: 'MSSQL MCP Server'
 date: 2025-11-19 12:00:00
 categories: development ai
-tags: Python SQL-Server MCP AI LLM
+tags: Python SQL-Server MCP LLM
 featured_image: '/img/posts/mssql-mcp-server.png'
 project_link: 'https://github.com/lorenzouriel/mssql-mcp-python'
 button_icon: 'github'
