@@ -1,13 +1,13 @@
 en:
   site_title: "Hello. I'm Lorenzo Uriel."
   site_description: "I write about real problems that I've faced and that you'll likely going to face, subscribe to stay in touch!"
-  latest_work: "Open Source Projects"
+  latest_work: "What I'm Building"
   visit_project: "Visit Project"
   footer_text: "© 2026 Lorenzo Uriel"
 
 pt:
   site_title: "Olá. Eu sou Lorenzo Uriel."
   site_description: "Escrevo sobre problemas reais que enfrentei e que você provavelmente enfrentará, inscreva-se abaixo para saber mais!"
-  latest_work: "Projetos Open Source"
+  latest_work: "O que Estou Construindo"
   visit_project: "Visitar Projeto"
   footer_text: "© 2026 Lorenzo Uriel"
