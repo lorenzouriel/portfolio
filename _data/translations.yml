@@ -1,13 +1,13 @@
 en:
   site_title: "Hello. I'm Lorenzo Uriel."
-  site_description: "I write about real problems that I've faced and that you'll likely going to face, subscribe to stay in touch!"
+  site_description: "I lead and coordinate data projects from conception to deploy, designing pipelines, tuning databases, and bringing analytics to the people who need it. On the side, I write about data, tech, AI, and project management on Medium."
   latest_work: "What I'm Building"
   visit_project: "Visit Project"
   footer_text: "© 2026 Lorenzo Uriel"
 
 pt:
   site_title: "Olá. Eu sou Lorenzo Uriel."
-  site_description: "Escrevo sobre problemas reais que enfrentei e que você provavelmente enfrentará, inscreva-se abaixo para saber mais!"
+  site_description: "Lidero e coordeno projetos de dados da concepção até o deploy, projetando pipelines, otimizando bancos de dados e levando analytics para quem precisa. Nas horas vagas, escrevo sobre dados, tecnologia, IA e gestão de projetos no Medium."
   latest_work: "O que Estou Construindo"
   visit_project: "Visitar Projeto"
   footer_text: "© 2026 Lorenzo Uriel"
