@@ -6,7 +6,8 @@
       <div class="col-md-12">
         <h2 id="{{ section_name }}-title" class="section-title text-center">{{ t[section_name] }}</h2>
         <div class="break"></div>
-        {% include interest-list.html items=site[section_name] %}
+        {% assign section_items = site[section_name] %}
+        {% include interest-list.html items=section_items %}
       </div>
     </div>
   </div>
