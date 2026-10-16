@@ -655,8 +655,10 @@ pre {
     line-height: 1;
     &:hover { color: #9eb1bd; }
   }
+  > .section-arrow:first-child { margin-left: auto; }
+  > .section-arrow[data-direction="1"] { margin-right: auto; }
 }
-.section-choices { display: flex; gap: 8px; }
+.section-choices { display: flex; flex-shrink: 0; gap: 8px; }
 .section-browser [hidden] { display: none !important; }
 .is-interactive {
   #portfolio > .container, .portfolio-section > .container { margin-top: 0; }
