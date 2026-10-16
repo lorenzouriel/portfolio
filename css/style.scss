@@ -60,12 +60,6 @@ $secondary: #FF7B7B;
   }
 }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
 body {
   background-color: #e9edf0;
   @extend %opensans;
@@ -152,6 +146,11 @@ button.btn, input.btn {
   border-right: solid 1px #cedfea;
   &.container {
     padding: 0;
+    width: 100%;
+    max-width: 1600px;
+    @media (min-width: 992px) {
+      width: calc(100% - 48px);
+    }
   }
   .container {
     width: 100%;
@@ -207,6 +206,7 @@ button.btn, input.btn {
 
 .hero-content {
   width: 60%;
+  max-width: 800px;
   margin: 0 auto;
   display: table;
   @include bp-medium {
@@ -459,6 +459,17 @@ button.btn, input.btn {
   // Bootstrap clearfix pseudo-elements must not become flex items.
   &:before, &:after {
     display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  #portfolio > .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .post-row {
+    .project-media { width: 62%; }
+    .project-description { width: 38%; }
   }
 }
 
