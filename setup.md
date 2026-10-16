@@ -64,3 +64,14 @@ Open [http://127.0.0.1:4000](http://127.0.0.1:4000) in your browser to view the 
 ## References
 * [Jekyll Documentation](https://jekyllrb.com/docs/)
 * [Jekyll Installation on Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/)
+## Updating writing, certifications, and books
+
+The writing section links to the Medium profile configured by `medium_username` in `_config.yml`.
+
+Edit `_data/interests.yml` to update the studying and reading sections:
+- `certifications.earned`: certifications you hold.
+- `certifications.planned`: certifications you aim to earn.
+- `books.current`: books you are reading.
+- `books.finished`: books you have read.
+
+Replace the sample entries and remove `example: true` from each real entry. Each entry supports `title`, `detail` (issuer or author), and an optional `url`. Add `title_pt` and `detail_pt` for Portuguese translations; otherwise the original text is used. Use `[]` for an empty list.

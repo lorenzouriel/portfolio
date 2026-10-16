@@ -1,0 +1,32 @@
+# Replace these examples with your own entries and remove example: true.
+# Optional fields: title_pt, detail_pt, url (credential or book link).
+certifications:
+  earned:
+    - title: "Microsoft Certified: Azure Fundamentals"
+      detail: "Microsoft"
+      example: true
+    - title: "AWS Certified Cloud Practitioner"
+      detail: "Amazon Web Services"
+      example: true
+  planned:
+    - title: "Microsoft Certified: Fabric Data Engineer Associate"
+      detail: "Microsoft"
+      example: true
+    - title: "Project Management Professional (PMP)"
+      detail: "Project Management Institute"
+      example: true
+books:
+  current:
+    - title: "Designing Data-Intensive Applications"
+      detail: "Martin Kleppmann"
+      example: true
+    - title: "Fundamentals of Data Engineering"
+      detail: "Joe Reis & Matt Housley"
+      example: true
+  finished:
+    - title: "The Pragmatic Programmer"
+      detail: "David Thomas & Andrew Hunt"
+      example: true
+    - title: "Atomic Habits"
+      detail: "James Clear"
+      example: true

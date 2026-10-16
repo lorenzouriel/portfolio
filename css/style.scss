@@ -603,3 +603,64 @@ pre {
     .highlight .vg { color: #000000 } /* Name.Variable.Global */
     .highlight .vi { color: #000000 } /* Name.Variable.Instance */
     .highlight .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
+
+/* Writing, certifications, and reading */
+.personal-sections {
+  padding: 0 30px;
+}
+.personal-section {
+  margin: 0 auto 80px;
+  scroll-margin-top: 80px;
+  .section-title {
+    margin-bottom: 48px;
+    &:after { top: auto; bottom: -14px; }
+  }
+}
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.interest-card, .writing-card {
+  padding: 28px;
+  border: 1px solid #d5e0e7;
+  border-radius: 12px;
+  background: #f8fafb;
+  overflow-wrap: break-word;
+  h3 { margin: 0 0 20px; font-size: 20px; line-height: 1.5; }
+  a { color: #2E4453; text-decoration: underline; text-underline-offset: 3px; }
+  a:hover { color: #b93619; }
+  a:focus-visible { outline: 3px solid #2E4453; outline-offset: 4px; }
+}
+.writing-card {
+  text-align: center;
+  > .fa { font-size: 32px; margin-bottom: 16px; }
+  p { margin-bottom: 20px; }
+}
+.interest-link { display: inline-block; padding: 10px 0; font-weight: 600; }
+.interest-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li + li { border-top: 1px solid #d5e0e7; margin-top: 20px; padding-top: 20px; }
+  a, .interest-title { font-size: 17px; font-weight: 600; }
+  p { font-size: 14px; margin: 8px 0 0; color: #526574; }
+}
+.interest-empty { font-size: 16px; color: #526574; margin: 0; }
+@media (max-width: 767px) {
+  .personal-sections { padding: 0 15px; }
+  .personal-section { margin-bottom: 48px; }
+  .interest-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .interest-card, .writing-card { padding: 20px; }
+}
+
+.example-label {
+  display: table;
+  margin-bottom: 8px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #e9edf0;
+  color: #526574;
+  font-size: 12px;
+  font-weight: 600;
+}

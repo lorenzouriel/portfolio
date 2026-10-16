@@ -1,0 +1,26 @@
+<div class="interest-card">
+  <h3>{{ include.heading }}</h3>
+  {% if include.items.size > 0 %}
+    <ul class="interest-list">
+      {% for item in include.items %}
+        {% assign item_title = item.title %}
+        {% assign item_detail = item.detail %}
+        {% if current_lang == 'pt' %}
+          {% assign item_title = item.title_pt | default: item.title %}
+          {% assign item_detail = item.detail_pt | default: item.detail %}
+        {% endif %}
+        <li>
+          {% if item.example %}<span class="example-label">{{ t.example_entry }}</span>{% endif %}
+          {% if item.url and item.url != '' %}
+            <a href="{{ item.url | escape }}">{{ item_title | escape }}</a>
+          {% else %}
+            <span class="interest-title">{{ item_title | escape }}</span>
+          {% endif %}
+          {% if item_detail and item_detail != '' %}<p>{{ item_detail | escape }}</p>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="interest-empty">{{ t.empty_list }}</p>
+  {% endif %}
+</div>
