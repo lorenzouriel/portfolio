@@ -1,11 +1,9 @@
 {% assign section_names = 'writing,studying,reading' | split: ',' %}
 {% for section_name in section_names %}
-<section id="{{ section_name }}" class="portfolio-section" aria-labelledby="{{ section_name }}-title">
+<section id="{{ section_name }}" class="portfolio-section" aria-label="{{ t[section_name] | escape }}">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2 id="{{ section_name }}-title" class="section-title text-center">{{ t[section_name] }}</h2>
-        <div class="break"></div>
         {% assign section_items = site[section_name] %}
         {% include interest-list.html items=section_items %}
       </div>
