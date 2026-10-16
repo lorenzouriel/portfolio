@@ -621,24 +621,30 @@ pre {
   margin: 48px 30px;
   overflow-x: auto;
   padding: 4px;
+  background: #fff;
   button {
     flex-shrink: 0;
     white-space: nowrap;
     min-height: 44px;
     padding: 10px 16px;
     border: 0;
-    border-bottom: 1px solid transparent;
     border-radius: 0;
-    background: transparent;
-    color: #657681;
+    background: #fff;
+    color: #2e4453;
     font: inherit;
     font-weight: 400;
     box-shadow: none;
     &:hover { color: #182a36; }
-    &[aria-pressed="true"] { color: #182a36; border-bottom-color: #182a36; }
+    &[aria-pressed="true"] { font-weight: 700; }
     &:focus-visible { outline: 2px solid #2e4453; outline-offset: 2px; }
   }
-  .section-arrow { min-width: 44px; padding: 10px; }
+  .section-arrow {
+    min-width: 44px;
+    padding: 0 10px;
+    color: #C8D7E1;
+    line-height: 1;
+    &:hover { color: #9eb1bd; }
+  }
 }
 .section-choices { display: flex; gap: 8px; }
 .section-browser [hidden] { display: none !important; }
