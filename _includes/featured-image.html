@@ -1,3 +1,10 @@
   {% if post.featured_image %}
-  <img class="img-responsive" src="{{ post.featured_image }}" title="{{ post.title }}">
+  {% assign image_title = post.title %}
+  {% if current_lang == 'pt' and post.title_pt %}
+    {% assign image_title = post.title_pt %}
+  {% endif %}
+  <a class="project-image" href="{{ post.featured_image | relative_url }}" aria-label="{{ image_title | escape }} — {% if current_lang == 'pt' %}Ver imagem completa{% else %}View full-size image{% endif %}">
+    <img class="img-responsive" src="{{ post.featured_image | relative_url }}" alt="{{ image_title | escape }}" loading="lazy" decoding="async">
+    <span class="project-image-caption">{% if current_lang == 'pt' %}Ver imagem completa{% else %}View full-size image{% endif %} &nearr;</span>
+  </a>
   {% endif %}

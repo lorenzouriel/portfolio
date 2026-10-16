@@ -110,7 +110,8 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 button.btn, input.btn {
@@ -151,6 +152,10 @@ button.btn, input.btn {
   border-right: solid 1px #cedfea;
   &.container {
     padding: 0;
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
   }
   @include bp-xsmall {
     border-left: none;
@@ -362,30 +367,10 @@ button.btn, input.btn {
   @include bp-small {
     margin-bottom: 2em;
   }
-  img.img-responsive {
-    @include bp-xsmall {
-      display: none;
-    }
-    @include bp-small {
-      display: none;
-    }
-  }
   .content {
-    margin-top: 5em;
-    margin-left: 5em;
-    @include bp-medium {
-      margin-left: 3em;
-      margin-top: 3em;
-    }
-    @include bp-small {
-      margin-left: 1.5em;
-      margin-top: 2em;
-    }
-    @include bp-xsmall {
-      margin-left: 0;
-      margin-top: 1em;
-      padding: 0 1em;
-    }
+    margin: 0;
+    padding: 0 1em;
+    overflow-wrap: break-word;
     h3.title {
       position: relative;
       margin-bottom: 1.5em;
@@ -403,16 +388,7 @@ button.btn, input.btn {
       }
     }
     .excerpt {
-      width: 80%;
-      @include bp-medium {
-        width: 90%;
-      }
-      @include bp-small {
-        width: 100%;
-      }
-      @include bp-xsmall {
-        width: 100%;
-      }
+      width: 100%;
     }
     button{
       font-size: 16px;
@@ -444,16 +420,63 @@ button.btn, input.btn {
   }
 }
 
-// vertically center content of post rows
+// Keep diagrams uncropped and available at full resolution.
+.project-image {
+  display: block;
+  padding: 12px;
+  border: 1px solid #d5e0e7;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(46, 68, 83, 0.06);
+  color: #2E4453;
+  &:hover, &:focus {
+    border-color: #2E4453;
+  }
+  &:focus-visible {
+    outline: 3px solid #2E4453;
+    outline-offset: 4px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.project-image-caption {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 13px;
+}
+
 .post-row {
-    align-items: center;
-    display: flex;
-    @include bp-xsmall {
-      display: block;
-    }
-    @include bp-small {
-      display: block;
-    }
+  display: flex;
+  align-items: center;
+  > div {
+    min-width: 0;
+  }
+  // Bootstrap clearfix pseudo-elements must not become flex items.
+  &:before, &:after {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .post-row {
+    flex-direction: column;
+    gap: 24px;
+    .project-media { order: -1; }
+    > div { width: 100%; }
+  }
+  .content-wrap {
+    margin-bottom: 4em;
+    .content { padding: 0; }
+  }
+  #portfolio .container {
+    margin-top: 3em;
+    .break { margin: 3em 0; }
+  }
 }
 
 /*--------------------------------------------------------------
