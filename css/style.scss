@@ -622,6 +622,9 @@ pre {
   overflow-x: auto;
   padding: 4px;
   background: #fff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
   button {
     flex-shrink: 0;
     white-space: nowrap;
@@ -634,7 +637,14 @@ pre {
     font: inherit;
     font-weight: 400;
     box-shadow: none;
-    &:hover { color: #182a36; }
+    &, &:hover, &:focus, &:active, &[aria-pressed="true"] {
+      appearance: none;
+      background: #fff;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      color: #2e4453;
+    }
     &[aria-pressed="true"] { font-weight: 700; }
     &:focus-visible { outline: 2px solid #2e4453; outline-offset: 2px; }
   }
