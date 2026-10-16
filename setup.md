@@ -76,3 +76,9 @@ Each section uses Markdown files with the same front matter and the same UI:
 Duplicate a Markdown file in the appropriate folder, then edit `title`, `date`, `position` (`left` or `right`), `featured_image`, `lead_text`, `tags`, `project_link`, `button_icon`, and `button_text`. Portuguese overrides are `title_pt`, `lead_text_pt`, and `button_text_pt`.
 
 For certifications, use `status: earned` or `status: planned`; for books, `status: current` or `status: finished`. Include the status in tags to display it. Remove `example: true` when replacing a sample with your own entry. Entries appear newest first. Restart Jekyll after collection configuration changes.
+
+### Medium archive import
+
+The Writing collection includes published links from the 2024-2026 local content archive. Entries without published URLs were skipped. Entries whose covers could not be retrieved use the Writing illustration and have `cover_status: pending` in their Markdown files.
+
+To replace a pending cover, save the image in `img/writing/` with the same basename as its Markdown entry, update `featured_image`, and remove `cover_status`. The article metadata remains editable in `_writing/`.
