@@ -1,4 +1,5 @@
 <div class="content">
+  {% if post.example %}<span class="example-label">{{ t.example_entry }}</span>{% endif %}
   {% if current_lang == 'pt' and post.title_pt %}
     <h3 class="title">{{ post.title_pt }}</h3>
   {% else %}
@@ -11,8 +12,12 @@
     <p class="excerpt">{{ post.lead_text }}</p>
   {% endif %}
 
-  {% if post.project_link != empty %}
-  <a href="{{ post.project_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{ t.visit_project }}</button></a>
+  {% if post.project_link and post.project_link != '' %}
+    {% assign link_label = post.button_text | default: t.visit_project %}
+    {% if current_lang == 'pt' %}
+      {% assign link_label = post.button_text_pt | default: t.visit_project %}
+    {% endif %}
+    <a href="{{ post.project_link | escape }}" class="project-link"><i class="fa fa-{{ post.button_icon | default: 'external-link' }}" aria-hidden="true"></i>{{ link_label | escape }}<span aria-hidden="true">&nearr;</span></a>
   {% endif %}
 
   {% if post.tags != empty %}

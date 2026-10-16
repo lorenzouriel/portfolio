@@ -1,16 +1,12 @@
 <div class="personal-sections container">
   <section id="writing" class="personal-section" aria-labelledby="writing-title">
     <h2 id="writing-title" class="section-title text-center">{{ t.writing }}</h2>
-    <div class="writing-card">
-      <i class="fa fa-medium" aria-hidden="true"></i>
-      <p>{{ t.writing_intro }}</p>
-      <a class="interest-link" href="https://{{ site.medium_username | escape }}">{{ t.medium_articles }} <span aria-hidden="true">&rarr;</span></a>
-    </div>
+    {% include interest-list.html items=site.data.interests.writing %}
   </section>
 
   <section id="studying" class="personal-section" aria-labelledby="studying-title">
     <h2 id="studying-title" class="section-title text-center">{{ t.studying }}</h2>
-    <div class="interest-grid">
+    <div class="interest-groups">
       {% include interest-list.html heading=t.earned items=site.data.interests.certifications.earned %}
       {% include interest-list.html heading=t.planned items=site.data.interests.certifications.planned %}
     </div>
@@ -18,7 +14,7 @@
 
   <section id="reading" class="personal-section" aria-labelledby="reading-title">
     <h2 id="reading-title" class="section-title text-center">{{ t.reading }}</h2>
-    <div class="interest-grid">
+    <div class="interest-groups">
       {% include interest-list.html heading=t.current items=site.data.interests.books.current %}
       {% include interest-list.html heading=t.finished items=site.data.interests.books.finished %}
     </div>

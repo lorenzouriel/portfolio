@@ -74,4 +74,10 @@ Edit `_data/interests.yml` to update the studying and reading sections:
 - `books.current`: books you are reading.
 - `books.finished`: books you have read.
 
-Replace the sample entries and remove `example: true` from each real entry. Each entry supports `title`, `detail` (issuer or author), and an optional `url`. Add `title_pt` and `detail_pt` for Portuguese translations; otherwise the original text is used. Use `[]` for an empty list.
+Replace the sample entries and remove `example: true` from each real entry. See the card fields below for descriptions, links, images, and Portuguese translations. Use `[]` for an empty list.
+
+### Editing section cards
+
+All four sections share the Building card layout. Projects stay in `_posts`; other cards live in `_data/interests.yml`, including the `writing` list.
+
+Each card uses `title`, `lead_text` (description), `featured_image` (local image path), `project_link`, `tags` (a list), `button_text`, and `button_icon` (Font Awesome icon name). Portuguese overrides are `title_pt`, `lead_text_pt`, and `button_text_pt`. Replace the included illustrations with your article images, certification artwork, or book covers. Remove `example: true` when a sample becomes your own entry.
