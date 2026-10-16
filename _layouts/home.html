@@ -5,12 +5,14 @@
 
     {% include home-hero.html %}
 
-    <main id="portfolio">
+    <main id="explore" class="section-browser">
+    {% include section-navigation.html %}
+    <section id="portfolio" aria-labelledby="building-title">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
 
-            <h2 class="section-title text-center">{{ t.latest_work }}</h2>
+            <h2 id="building-title" class="section-title text-center">{{ t.latest_work }}</h2>
             {% if site.section_subtitle != '' %}
             <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
             {% endif %}
@@ -34,8 +36,9 @@
           </div>
         </div>
       </div>
-    </main>
+    </section>
 
 {% include personal-sections.html %}
+    </main>
 
 {% include footer.html %}

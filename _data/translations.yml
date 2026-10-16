@@ -1,4 +1,7 @@
 en:
+  explore_sections: "Explore my portfolio"
+  previous_section: "Previous section"
+  next_section: "Next section"
   example_entry: "Example"
   writing: "What I'm Writing"
   writing_intro: "Articles on data, technology, AI, and project management."
@@ -17,6 +20,9 @@ en:
   footer_text: "© 2026 Lorenzo Uriel"
 
 pt:
+  explore_sections: "Explore meu portfólio"
+  previous_section: "Seção anterior"
+  next_section: "Próxima seção"
   example_entry: "Exemplo"
   writing: "O que Estou Escrevendo"
   writing_intro: "Artigos sobre dados, tecnologia, IA e gestão de projetos."
