@@ -423,15 +423,11 @@ button.btn, input.btn {
 // Keep diagrams uncropped and available at full resolution.
 .project-image {
   display: block;
-  padding: 12px;
-  border: 1px solid #d5e0e7;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 4px 18px rgba(46, 68, 83, 0.06);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   color: #2E4453;
-  &:hover, &:focus {
-    border-color: #2E4453;
-  }
   &:focus-visible {
     outline: 3px solid #2E4453;
     outline-offset: 4px;
@@ -615,7 +611,7 @@ pre {
     .highlight .vi { color: #000000 } /* Name.Variable.Instance */
     .highlight .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
 
-/* Section navigation uses the original light, outlined button style. */
+/* Minimal text navigation. */
 .section-browser { scroll-margin-top: 30px; }
 .section-navigation {
   display: flex;
@@ -630,16 +626,16 @@ pre {
     white-space: nowrap;
     min-height: 44px;
     padding: 10px 16px;
-    border: 1px solid #d5e0e7;
-    border-radius: 4px;
-    background: #fff;
-    color: #2e4453;
+    border: 0;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+    background: transparent;
+    color: #657681;
     font: inherit;
-    font-weight: 600;
+    font-weight: 400;
     box-shadow: none;
-    .fa { margin-right: 8px; }
-    &:hover { background: #f8fafb; border-color: #b0c5d2; }
-    &[aria-pressed="true"] { background: #f1f5f7; border-color: #8ba2b2; }
+    &:hover { color: #182a36; }
+    &[aria-pressed="true"] { color: #182a36; border-bottom-color: #182a36; }
     &:focus-visible { outline: 2px solid #2e4453; outline-offset: 2px; }
   }
   .section-arrow { min-width: 44px; padding: 10px; }
