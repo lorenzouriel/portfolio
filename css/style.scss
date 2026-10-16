@@ -652,3 +652,22 @@ pre {
   .section-navigation { margin: 32px 15px; }
   .section-navigation button { font-size: 13px; padding: 10px 12px; }
 }
+
+/* One white link button, without an outer button wrapper. */
+.content .entry-button {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  padding: 12px 35px;
+  margin: 1em 0;
+  border: 1px solid #d5e0e7;
+  border-radius: 4px;
+  background: #fff;
+  color: #2e4453;
+  box-shadow: none;
+  font-size: 16px;
+  font-weight: 600;
+  i { padding-right: 0.5em; }
+  &:hover, &:focus { background: #fff; border-color: #b0c5d2; color: #2e4453; }
+  &:focus-visible { outline: 2px solid #2e4453; outline-offset: 3px; }
+}
