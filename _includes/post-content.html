@@ -17,7 +17,7 @@
     {% if current_lang == 'pt' %}
       {% assign link_label = post.button_text_pt | default: t.visit_project %}
     {% endif %}
-    <a href="{{ post.project_link | escape }}" class="project-link"><i class="fa fa-{{ post.button_icon | default: 'external-link' }}" aria-hidden="true"></i>{{ link_label | escape }}<span aria-hidden="true">&nearr;</span></a>
+    <a href="{{ post.project_link | escape }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{ post.button_icon | default: 'external-link' }} fa-lg" aria-hidden="true"></i>{{ link_label | escape }}</button></a>
   {% endif %}
 
   {% if post.tags != empty %}

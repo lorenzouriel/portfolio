@@ -110,3 +110,11 @@ enable_contact: false
 # nav_item:
 #   - { url: '/', text: 'Home' }
 #   - { url: '/about', text: 'About' }
+# Markdown entries, using the same front matter and UI as _posts.
+collections:
+  writing:
+    output: true
+  studying:
+    output: true
+  reading:
+    output: true

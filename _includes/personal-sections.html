@@ -1,22 +1,14 @@
-<div class="personal-sections container">
-  <section id="writing" class="personal-section" aria-labelledby="writing-title">
-    <h2 id="writing-title" class="section-title text-center">{{ t.writing }}</h2>
-    {% include interest-list.html items=site.data.interests.writing %}
-  </section>
-
-  <section id="studying" class="personal-section" aria-labelledby="studying-title">
-    <h2 id="studying-title" class="section-title text-center">{{ t.studying }}</h2>
-    <div class="interest-groups">
-      {% include interest-list.html heading=t.earned items=site.data.interests.certifications.earned %}
-      {% include interest-list.html heading=t.planned items=site.data.interests.certifications.planned %}
+{% assign section_names = 'writing,studying,reading' | split: ',' %}
+{% for section_name in section_names %}
+<section id="{{ section_name }}" class="portfolio-section" aria-labelledby="{{ section_name }}-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="{{ section_name }}-title" class="section-title text-center">{{ t[section_name] }}</h2>
+        <div class="break"></div>
+        {% include interest-list.html items=site[section_name] %}
+      </div>
     </div>
-  </section>
-
-  <section id="reading" class="personal-section" aria-labelledby="reading-title">
-    <h2 id="reading-title" class="section-title text-center">{{ t.reading }}</h2>
-    <div class="interest-groups">
-      {% include interest-list.html heading=t.current items=site.data.interests.books.current %}
-      {% include interest-list.html heading=t.finished items=site.data.interests.books.finished %}
-    </div>
-  </section>
-</div>
+  </div>
+</section>
+{% endfor %}

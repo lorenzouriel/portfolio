@@ -1,13 +1,8 @@
-<div class="interest-group">
-  {% if include.heading %}<h3 class="interest-group-title">{{ include.heading }}</h3>{% endif %}
-  {% for post in include.items %}
-    {% assign side = forloop.index0 | modulo: 2 %}
-    {% if side == 0 %}
-      {% include content-right.html %}
-    {% else %}
-      {% include content-left.html %}
-    {% endif %}
+{% assign section_posts = include.items | sort: 'date' | reverse %}
+{% for post in section_posts %}
+  {% if post.position == 'left' %}
+    {% include content-left.html %}
   {% else %}
-    <p class="interest-empty">{{ t.empty_list }}</p>
-  {% endfor %}
-</div>
+    {% include content-right.html %}
+  {% endif %}
+{% endfor %}

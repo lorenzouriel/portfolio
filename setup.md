@@ -64,20 +64,15 @@ Open [http://127.0.0.1:4000](http://127.0.0.1:4000) in your browser to view the 
 ## References
 * [Jekyll Documentation](https://jekyllrb.com/docs/)
 * [Jekyll Installation on Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/)
-## Updating writing, certifications, and books
+## Editing portfolio sections
 
-The writing section links to the Medium profile configured by `medium_username` in `_config.yml`.
+Each section uses Markdown files with the same front matter and the same UI:
 
-Edit `_data/interests.yml` to update the studying and reading sections:
-- `certifications.earned`: certifications you hold.
-- `certifications.planned`: certifications you aim to earn.
-- `books.current`: books you are reading.
-- `books.finished`: books you have read.
+- `_posts/`: What I'm Building (existing Jekyll posts).
+- `_writing/`: What I'm Writing.
+- `_studying/`: What I'm Studying.
+- `_reading/`: What I'm Reading.
 
-Replace the sample entries and remove `example: true` from each real entry. See the card fields below for descriptions, links, images, and Portuguese translations. Use `[]` for an empty list.
+Duplicate a Markdown file in the appropriate folder, then edit `title`, `date`, `position` (`left` or `right`), `featured_image`, `lead_text`, `tags`, `project_link`, `button_icon`, and `button_text`. Portuguese overrides are `title_pt`, `lead_text_pt`, and `button_text_pt`.
 
-### Editing section cards
-
-All four sections share the Building card layout. Projects stay in `_posts`; other cards live in `_data/interests.yml`, including the `writing` list.
-
-Each card uses `title`, `lead_text` (description), `featured_image` (local image path), `project_link`, `tags` (a list), `button_text`, and `button_icon` (Font Awesome icon name). Portuguese overrides are `title_pt`, `lead_text_pt`, and `button_text_pt`. Replace the included illustrations with your article images, certification artwork, or book covers. Remove `example: true` when a sample becomes your own entry.
+For certifications, use `status: earned` or `status: planned`; for books, `status: current` or `status: finished`. Include the status in tags to display it. Remove `example: true` when replacing a sample with your own entry. Entries appear newest first. Restart Jekyll after collection configuration changes.
