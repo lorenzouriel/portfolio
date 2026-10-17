@@ -373,15 +373,16 @@ button.btn, input.btn {
     overflow-wrap: break-word;
     h3.title {
       position: relative;
+      line-height: 1.4;
+      overflow-wrap: break-word;
       margin-bottom: 1.5em;
       @include bp-xsmall {
         font-size: 1.5em;
       }
       &:after {
         content: '';
-        position: absolute;
-        top: 1.5em;
-        left: 0;
+        display: block;
+        margin-top: 0.5em;
         width: 3em;
         height: 3px;
         background-color: #ECEFF1;
