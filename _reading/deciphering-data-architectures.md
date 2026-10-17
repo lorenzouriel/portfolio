@@ -1,7 +1,8 @@
 ---
 # Date added to the portfolio, not the reading completion date.
 layout: inner
-position: left
+order: 1
+position: right
 date: '2026-10-16 12:00:00'
 title: Deciphering Data Architectures
 lead_text: Understanding data architecture approaches, including warehouses and lakehouses.

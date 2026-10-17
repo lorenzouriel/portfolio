@@ -1,7 +1,8 @@
 ---
 # Date added to the portfolio, not the reading completion date.
 layout: inner
-position: right
+order: 6
+position: left
 date: '2026-10-16 12:00:00'
 title: SQL Queries for Mere Mortals
 lead_text: A practical guide to writing SQL queries and working with relational data.

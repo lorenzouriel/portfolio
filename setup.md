@@ -68,10 +68,10 @@ Open [http://127.0.0.1:4000](http://127.0.0.1:4000) in your browser to view the 
 
 Each section uses Markdown files with the same front matter and the same UI:
 
-- `_posts/`: What I'm Building (existing Jekyll posts).
-- `_writing/`: What I'm Writing.
-- `_studying/`: What I'm Studying.
-- `_reading/`: What I'm Reading.
+- `_posts/`: Projects (existing Jekyll posts).
+- `_writing/`: Articles.
+- `_studying/`: Certifications.
+- `_reading/`: Books.
 
 Duplicate a Markdown file in the appropriate folder, then edit `title`, `date`, `position` (`left` or `right`), `featured_image`, `lead_text`, `tags`, `project_link`, `button_icon`, and `button_text`. Portuguese overrides are `title_pt`, `lead_text_pt`, and `button_text_pt`.
 
@@ -82,3 +82,5 @@ For certifications, use `status: earned` or `status: planned`; for books, `statu
 The Writing collection includes published links from the 2024-2026 local content archive. Entries without published URLs were skipped. Entries whose covers could not be retrieved use the Writing illustration and have `cover_status: pending` in their Markdown files.
 
 To replace a pending cover, save the image in `img/writing/` with the same basename as its Markdown entry, update `featured_image`, and remove `cover_status`. The article metadata remains editable in `_writing/`.
+
+Books use the numeric `order` field in `_reading/` (lowest first). Current reads come first, followed by data engineering, database, and product books. Other sections remain sorted by date.

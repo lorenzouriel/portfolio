@@ -1,4 +1,7 @@
 {% assign section_posts = include.items | sort: 'date' | reverse %}
+{% if include.section == 'reading' %}
+  {% assign section_posts = include.items | sort: 'order' %}
+{% endif %}
 {% for post in section_posts %}
   {% if post.position == 'left' %}
     {% include content-left.html %}

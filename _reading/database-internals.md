@@ -1,7 +1,8 @@
 ---
 # Date added to the portfolio, not the reading completion date.
 layout: inner
-position: right
+order: 2
+position: left
 date: '2026-10-16 12:00:00'
 title: Database Internals
 lead_text: A deep dive into how database storage and distributed data systems work.

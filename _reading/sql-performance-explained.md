@@ -1,7 +1,8 @@
 ---
 # Date added to the portfolio, not the reading completion date.
 layout: inner
-position: left
+order: 7
+position: right
 date: '2026-10-16 12:00:00'
 title: SQL Performance Explained
 lead_text: SQL performance, indexing, and the principles behind efficient database

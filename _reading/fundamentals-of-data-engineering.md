@@ -1,6 +1,7 @@
 ---
 # Date added to the portfolio, not the reading completion date.
 layout: inner
+order: 3
 position: right
 date: '2026-10-16 12:00:00'
 title: Fundamentals of Data Engineering
