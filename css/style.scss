@@ -703,3 +703,57 @@ pre {
   &:hover, &:focus { background: #fff; border-color: #b0c5d2; color: #2e4453; }
   &:focus-visible { outline: 2px solid #2e4453; outline-offset: 3px; }
 }
+
+/* Theme control shares the language selector. Light remains the default. */
+.theme-toggle {
+  vertical-align: middle;
+  padding: 4px 6px;
+  border: 0;
+  background: transparent;
+  color: #2e4453;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  &:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+}
+.theme-toggle[hidden] { display: none; }
+html[data-theme="dark"] {
+  color-scheme: dark;
+  body { background: #111518; color: #e5e9ed; }
+  .main { background: #191f24; border-color: #343e47; }
+  a { color: #c1d3e0; &:hover { color: #ffad94; } }
+  .language-switcher { background: #191f24; box-shadow: none; border: 1px solid #343e47; }
+  .language-switcher .lang-link, .theme-toggle { color: #d8e2e9; }
+  .language-switcher .lang-link.active { color: #ffad94; }
+  .section-navigation, .section-navigation button {
+    background: #191f24;
+    color: #c1cbd3;
+    border: 0;
+    box-shadow: none;
+  }
+  .section-navigation button {
+    &:hover, &:focus, &:active, &[aria-pressed="true"] {
+      background: #191f24;
+      color: #f4f6f8;
+      border: 0;
+      box-shadow: none;
+    }
+    &:focus-visible { outline-color: #c1d3e0; }
+  }
+  .section-navigation .section-arrow { color: #a6bac9; }
+  .content-wrap .content .tags span, .content-wrap .content .categories span {
+    background: #29343e;
+    color: #d0dbe3;
+  }
+  .content-wrap .content h3.title:after, .section-title:after { background: #343e47; }
+  .content .entry-button, button.btn, input.btn {
+    background: #191f24;
+    border-color: #647787;
+    color: #e5e9ed;
+    &:hover, &:focus { background: #29343e; border-color: #b0c5d2; color: #fff; box-shadow: none; }
+  }
+  .content .entry-button:focus-visible, .project-image:focus-visible { outline-color: #c1d3e0; }
+  .project-image, .example-label { color: #c1d3e0; }
+  .site-footer { border-color: #343e47; }
+  pre, code { background: #111518; color: #e5e9ed; border-color: #343e47; }
+}

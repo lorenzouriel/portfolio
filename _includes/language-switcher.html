@@ -14,4 +14,10 @@
      title="Português">
     PT
   </a>
+  <span class="lang-separator" aria-hidden="true">|</span>
+  <button type="button" class="theme-toggle" hidden aria-pressed="false"
+          aria-label="{% if current_lang == 'pt' %}Modo escuro{% else %}Dark mode{% endif %}"
+          title="{% if current_lang == 'pt' %}Modo escuro{% else %}Dark mode{% endif %}">
+    <i class="fa fa-moon-o" aria-hidden="true"></i>
+  </button>
 </div>
