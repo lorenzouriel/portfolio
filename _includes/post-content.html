@@ -22,7 +22,11 @@
 
   {% if post.tags != empty %}
   <div class="tags">
-    {% for tag in post.tags %}
+    {% assign display_tags = post.tags %}
+    {% if current_lang == 'pt' and post.tags_pt %}
+      {% assign display_tags = post.tags_pt %}
+    {% endif %}
+    {% for tag in display_tags %}
     <span>{{ tag }}</span>
     {% endfor %}
   </div>

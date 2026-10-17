@@ -1,20 +1,24 @@
 ---
+# Date added to the portfolio, not the reading completion date.
 layout: inner
-position: left
+position: right
 date: '2026-10-16 12:00:00'
 title: Fundamentals of Data Engineering
-example: true
-lead_text: A reading-list entry by Joe Reis & Matt Housley. Replace this sample description
-  with your own notes.
-lead_text_pt: Substitua esta descrição de exemplo pelas suas notas.
-featured_image: /img/interests/reading.svg
-project_link: https://books.google.com/books?q=Fundamentals%20of%20Data%20Engineering
+lead_text: The foundations of data engineering and designing robust data systems.
+lead_text_pt: Fundamentos da engenharia de dados e do projeto de sistemas de dados
+  robustos.
+featured_image: /img/reading/fundamentals-of-data-engineering.jpg
+project_link: https://www.amazon.com/Fundamentals-Data-Engineering-Joe-Reis-ebook/dp/B0B4VH4T37
 tags:
-- Current
-- Book
-- Reading
-button_text: Find book
-button_text_pt: Encontrar livro
+- Already read
+- Data Engineering
+- Data Systems
+tags_pt:
+- Já li
+- Data Engineering
+- Data Systems
+button_text: View book
+button_text_pt: Ver livro
 button_icon: book
-status: current
+status: finished
 ---
